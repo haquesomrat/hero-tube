@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.button {
+  @apply bg-gray px-6 py-2 text-gray-7 rounded-md font-medium;
+}
+.button-active {
+  @apply bg-tube-red text-white;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - PHero Tube</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="dist/tailwind.css" />
+  </head>
+  <body>
+    <!-- header starts  -->
+    <header class="container mx-auto pt-12 pb-8 px-4">
+      <!-- nav bar starts  -->
+      <nav
+        class="flex flex-col md:flex-row gap-4 justify-between items-center border-b border-light-black pb-8"
+      >
+        <a href="index.html">
+          <img src="./img/Logo.png" alt="logo" />
+        </a>
+
+        <a
+          class="px-8 py-2 bg-tube-red rounded-md text-lg font-medium text-white"
+          href="index.html"
+          >Home</a
+        >
+      </nav>
+      <!-- nav bar ends -->
+    </header>
+    <!-- header ends  -->
+
+    <!-- main starts  -->
+    <main class="container mx-auto px-4 text-black font-inter space-y-4">
+      <div class="collapse bg-lime-100">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+          Discuss the scope of var, let, and const
+        </div>
+        <div class="collapse-content">
+          <p>
+            In addition to their different characteristics and use cases, let,
+            var, and const also have different scopes in JavaScript.
+            Understanding the scope of a variable is important for writing
+            clean, organized, and efficient code.
+            <br />
+            <br />
+            Var Scope: As mentioned earlier, variables declared using var are
+            function-scoped. This means that they are accessible within the
+            function in which they are defined, as well as any nested functions.
+            Variables declared using var can also be accessed outside of the
+            function in which they are defined if they are declared in the
+            global scope.Here is an example:
+            <br />
+            <br />
+            <br />
+            <code>
+              var globalVariable = ‘Hello, World!’; <br />
+              function example() { <br />
+              var localVariable = ‘Hello, JavaScript!’; <br />
+              console.log(localVariable); // Output: Hello, JavaScript! <br />
+              console.log(globalVariable); // Output: Hello, World! <br />
+              } <br />
+              console.log(globalVariable); // Output: Hello, World! <br />
+              console.log(localVariable); // Output: Throws an error
+            </code>
+            <br />
+            <br />
+            <br />
+            In the above code, the globalVariable is declared in the global
+            scope and can be accessed both inside and outside of the example
+            function. The localVariable is declared inside the example function
+            and can only be accessed within the function.
+            <br />
+            <br />
+            Let and Const Scope: Variables declared using let and const are
+            block-scoped. This means that they are accessible only within the
+            block in which they are defined. A block is a set of statements
+            surrounded by curly braces, such as an if statement or a for loop.
+            Here is an example:
+            <br />
+            <br />
+            <br />
+            <code>
+              function example() { <br />
+              if (true) { <br />
+              let x = 'Hello, JavaScript!'; <br />
+              const y = 'Hello, World!'; <br />
+              console.log(x); // Output: Hello, JavaScript! <br />
+              console.log(y); // Output: Hello, World! <br />
+              } <br />
+              console.log(x); // Output: Throws an error <br />
+              console.log(y); // Output: Throws an error <br />
+              }
+            </code>
+            <br />
+            <br />
+            <br />
+            In the above code, the variables x and y are declared inside the if
+            statement block and can only be accessed within that block. If we
+            try to access them outside of the block, we get an error.
+          </p>
+        </div>
+      </div>
+      <div class="collapse bg-orange-100">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+          Tell us the use cases of null and undefined
+        </div>
+        <div class="collapse-content">
+          <p>
+            In JavaScript, null and undefined are two distinct values that are
+            often used to represent different concepts. Here's an explanation of
+            each and their common use cases:
+            <br />
+            <br />
+            <strong>"null"</strong>
+            <br />
+            1. <strong>null</strong> is a value that represents the intentional
+            absence of any object value or the absence of a value itself.
+            <br />
+            2. It is typically assigned by a developer to indicate that a
+            variable or property should have no value.
+            <br />
+            3. It is often used to clear or reset a variable.
+            <br />
+            4. you might use <strong>null</strong> to initialize a variable that
+            will later hold an object.
+            <br />
+            5. Setting a variable or object property to
+            <strong>null</strong> can be used to indicate that it no longer
+            holds a valid value.
+            <br />
+            <br />
+            <strong>"undefined"</strong>
+            <br />
+            1. <strong>undefined</strong> is a value that indicates the absence
+            of a value in a variable or object property, often by default.
+            <br />
+            2. Variables that have been declared but not assigned a value are
+            automatically set to <strong>undefined</strong>.
+            <br />
+            3. It can also be returned from a function that doesn't explicitly
+            return a value
+            <br />
+            4. It is a way to check whether a variable or property has been
+            defined or not.
+            <br />
+            5. You can use <strong>undefined</strong> to check if a variable has
+            been assigned a value or not. If it's <strong>undefined</strong>,
+            you can set a default value.
+            <br />
+            5. You can use <strong>undefined</strong> to check if an object
+            property exists.
+            <br />
+          </p>
+        </div>
+      </div>
+      <div class="collapse bg-red-200">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What do you mean by REST API?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Rest API — Representational State Transfer Application Programming
+            Interface
+            <br />
+            <br />
+            REST নির্ধারণ করে যে এপিআই কেমন হবে। ডেভেলপাররা যখন তাদের API তৈরী
+            করে তখন তারা কিছু নিয়ম মেনে তা তৈরী করে।
+            <br />
+            <br />
+            এখানে আপনি Quora এর মতো একটি ওয়েবসাইট তৈরী করবেন। যেখানে user
+            authetication থাকবে। যেখানে আপনাকে registrationকরে একটি একাউন্ট তৈরী
+            করতে হবে অথবা আপনার যদি google একাউন্ট থাকে আপনি google একাউন্ট
+            দিয়েও Quora ব্যবহার করতে পারবেন। এ ক্ষেত্রে Quora গুগল থেকে Rest API
+            ব্যবহার করবে যার ফলে আপনি রেজিস্টেশন করার সময় যে সকল তথ্য দিতে হতো
+            তা google একাউন্ট Quora কে দিয়ে দিবে। এখানে যে পদ্ধতিতে user এর তথ্য
+            গুলো google একাউন্ট থেকে Quora আদানপ্রদান হয় সে পদ্ধতিটি হলো — Rest
+            API.
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- main ends -->
+  </body>
+</html>
