@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-white">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +26,6 @@
         </a>
         <button
           id="sort-by-views"
-          onclick="handleSort()"
           class="px-6 py-2 bg-gray border-0 text-lg text-light-black rounded-md font-medium"
         >
           Sort by view
@@ -52,10 +51,7 @@
       </div>
       <!-- card container  -->
       <div id="video-card-container">
-        <div
-          id="card-container"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pb-8"
-        >
+        <div id="card-container" class="grid grid-cols-12 gap-6 pb-8">
           <!-- <div class="card rounded-none">
             <figure class="aspect-video rounded-lg relative">
               <img src="https://i.ibb.co/L1b6xSq/shape.jpg" alt="thumbnail" />
@@ -113,24 +109,20 @@
       </div>
 
       <!-- Not found  -->
-      <div
-        class="p-52 flex-col gap-8 items-center justify-center hidden"
+      <!-- <div
+        class="p-20 lg:p-52 flex-col gap-8 items-center justify-center hidden"
         id="not-found"
       >
         <img src="./img/Icon.png" alt="not found" />
-        <h3 class="text-4xl font-semibold text-center text-dark-black">
+        <h3
+          class="text-2xl lg:text-4xl font-semibold text-center text-dark-black"
+        >
           Oops!! Sorry, There is no <br />
           content here
         </h3>
-      </div>
+      </div> -->
     </main>
     <!-- main ends -->
-
-    <!-- footer starts  -->
-    <footer class="container mx-auto bg-yellow-100">
-      <small>this is footer</small>
-    </footer>
-    <!-- footer ends -->
 
     <!-- scripts  -->
     <script src="scripts/app.js"></script>
